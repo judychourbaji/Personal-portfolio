@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the same CSS file -->
+</head>
+<body class="work-7-page"> <!-- Added class for dynamic background -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Car Race</p>
+                <h1> Bluetooth-controlled car <br> with <span>ESP32 and MicroPython</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Description Section -->
+    <section class="project-description">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>
+                As part of our electronics course, we designed and built a Bluetooth-controlled car using MicroPython 
+                and the ESP32 microcontroller. We repurposed motors from an R/C toy car, write control functions, and 
+                integrate wireless communication to steer and drive the car via a phone app.
+            </p>
+            <p>
+                Our car combined two 4.8V DC motors—one for speed and one for steering—connected to an ESP32 via H-Bridge 
+                motor drivers. Using Pulse Width Modulation (PWM), we precisely adjusted motor speeds and directions. 
+                With Bluetooth communication and joystick commands from the app, we implemented real-time movement using
+                MicroPython scripts and interpreted directional data from the controller.
+            </p>
+            <p>
+                Despite early issues with voltage demands and Bluetooth pairing, we fine-tuned our dual-battery setup and 
+                control logic to enable smooth, responsive driving.
+            </p>
+            <p> 
+                This project merged hardware hacking, software control, and embedded systems design into a fully functional 
+                remote-control car. We proudly finished 3rd place in the final race, proving the reliability and performance 
+                of our solution.
+            </p>
+        </div>
+    </section>
+
+    <!--- You May Also Like Section --->
+    <div class="container">
+        <h1 class="sub-title">You May Also Like</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-6.png">
+                <div class="layer">
+                    <h3>Sustainability Engineering Hackathon</h3>
+                    <p>From the sun to the circuit – a new take on clean energy</p>
+                    <a href="work-6.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Kewbot</h3>
+                    <p>Rethinking ageing in the cities of tomorrow</p>
+                    <a href="work-1.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Physical Computing</h3>
+                    <p>The talking graduation cap - a guessing game like no other</p>
+                    <a href="work-2.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="projects.html" class="btn">See All Projects</a> <!-- Button to go back -->
+    </div>
+</body>
+</html>

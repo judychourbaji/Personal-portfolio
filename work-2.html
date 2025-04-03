@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the same CSS file -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- FontAwesome for icons -->
+</head>
+
+<body class="work-2-page"> <!-- Added class for dynamic background -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Physical Computing</p>
+                <h1>The <span>Talking Graduation Cap</span> <br> A Guessing Game Like No Other</h1>
+            </div>
+        </div>
+    </div>
+<body>
+
+
+    <!-- Project Description Section -->
+    <section class="project-description">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>
+                Inspired by the Harry Potter Sorting Hat and the game Akinator, this project aimed to create an interactive graduation cap 
+                that can guess which Dyson School staff member the user is thinking of, using only audio questions and head movements 
+                (nodding for "yes", shaking for "no").
+            </p>
+            <p>
+                We designed a cap equipped with sensors, motors, and a speaker, all coordinated through serial communication between Arduino and Bela. 
+                The system follows an interactive flowchart based on the user's answers. While asking questions, the cap’s mouth moves in sync with the audio, 
+                and the final response triggers a dramatic or joyful tassel spin to conclude the interaction.
+            </p>
+            <p>
+                This project brings together electronics, mechanics, and interaction design in a playful and expressive way.
+            </p>
+        </div>
+    </section>
+
+
+
+    <!--- Video Section --->
+    <section id="video-section">
+        <video controls id="fullscreen-video">
+            <source src="images/work-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!---You May Also Like section-->
+    <div class="container">
+        <h1 class="sub-title">You May Also Like</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Kewbot</h3>
+                    <p>Rethinking ageing in the cities of tomorrow</p>
+                    <a href="work-1.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-4.png">
+                <div class="layer">
+                    <h3>Human Centered Design</h3>
+                    <p>Rethinking cleanliness in shared kitchen</p>
+                    <a href="work-4.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-7.png">
+                <div class="layer">
+                    <h3>Car Race</h3>
+                    <p>Bluetooth-controlled car with ESP32 and MicroPython</p>
+                    <a href="work-7.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="projects.html" class="btn">See All Projects</a> <!-- Button to go back -->
+    </div>
+    
+
+
+</body>
+</html>

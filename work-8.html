@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the same CSS file -->
+</head>
+<body class="work-8-page"> <!-- Added class for dynamic background -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Water tower challenge</p>
+                <h1>Optimizing a Biodegradable <br> Water Tower with <span>FEA</span>
+
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Description Section -->
+    <section class="project-description">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>
+                As part of the FEA Water Tower Challenge 2025, our team designed and analyzed a lightweight, biodegradable water tower, balancing structural efficiency with environmental responsibility.
+            </p>
+            <p>
+                Using ANSYS, we conducted extensive static and buckling analyses, refining our design to ensure optimal 
+                load-bearing capacity and resistance to structural instability. By iterating through simulations, we identified 
+                key stress points and optimized material distribution, enhancing both performance and sustainability.
+            </p>
+            <p>
+                Our accurate FEA predictions were validated when constructing the water tower using pasta, as our design successfully supported the highest weight in the competition. By closely matching theoretical analysis with real-world performance, we secured 1st place, demonstrating the precision of our structural simulations and the strength of our design.
+            </p>
+        </div>
+    </section>
+
+    <div class="gallery">
+        <img src="images/8.1.png" alt="Report Page 1">
+        <img src="images/8.2.png" alt="Report Page 2">
+        <img src="images/8.3.png" alt="Report Page 3">
+    </div>
+
+    <!--- You May Also Like Section --->
+    <div class="container">
+        <h1 class="sub-title">You May Also Like</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-5.png">
+                <div class="layer">
+                    <h3>Thermofluids</h3>
+                    <p>Vehicle aerodynamics & thermal design</p>
+                    <a href="work-5.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Kewbot</h3>
+                    <p>Rethinking ageing in the cities of tomorrow</p>
+                    <a href="work-1.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Physical Computing</h3>
+                    <p>The talking graduation cap - a guessing game like no other</p>
+                    <a href="work-2.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="projects.html" class="btn">See All Projects</a> <!-- Button to go back -->
+    </div>
+</body>
+</html>

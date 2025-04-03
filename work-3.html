@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the same CSS file -->
+</head>
+
+<body class="work-3-page"> <!-- Added class for dynamic background -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Sustainable Design Engineering</p>
+                <h1> Designing for <span> Circularity </span> <br> in the Skies</h1>
+            </div>
+        </div>
+    </div>
+<body>
+
+    <!-- Project Description Section -->
+    <section class="project-description">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>
+                As part of a collaborative project between Imperial College London and JPA Design, I developed a sustainable aircraft seat concept focused on circularity, modularity, and long-term durability. I was honoured to present my work to industry professionals and thrilled to have been awarded 2nd place.
+            <p>
+                My concept integrates sustainability and smart technology. Beyond its lightweight recycled aluminium frame and bio-based, recyclable cushioning, the seat is enhanced with AI-driven monitoring systems. These sensors track material fatigue, weight distribution, and degradation over time—enabling predictive maintenance, longer product lifespan, and reduced waste.
+            </p>
+            <p>
+                Passengers can also choose optional ergonomic add-ons made from ocean-recycled plastics, such as modular storage or screen holders, supporting a lighter, customisable experience while encouraging eco-conscious decisions.
+            </p>
+            <p> 
+                This project was a powerful opportunity to explore how intelligent systems, circular design, and user-centred thinking can converge to define the future of sustainable aviation.
+            </p>
+        </div>
+    </section>
+
+     <!--- Video Section --->
+     <section id="video-section">
+        <video controls id="fullscreen-video">
+            <source src="images/work-3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!---You May Also Like section-->
+    <div class="container">
+        <h1 class="sub-title">You May Also Like</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Kewbot</h3>
+                    <p>Rethinking ageing in the cities of tomorrow</p>
+                    <a href="work-1.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-5.png">
+                <div class="layer">
+                    <h3>Thermofluids</h3>
+                    <p>Vehicle aerodynamics & thermal design</p>
+                    <a href="work-5.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-6.png">
+                <div class="layer">
+                    <h3>Sustainability Engineering Hackathon</h3>
+                    <p>From the sun to the circuit – a new take on clean energy</p>
+                    <a href="work-6.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="projects.html" class="btn">See All Projects</a> <!-- Button to go back -->
+    </div>
+
+</html>

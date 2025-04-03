@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the same CSS file -->
+</head>
+<body class="work-4-page"> <!-- Added class for dynamic background -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Human Centered Design</p>
+                <h1>Rethinking <br><span>Cleanliness</span> <br>in Shared <br>Kitchens</h1>
+            </div>
+        </div>
+    </div>
+<body>
+
+     <!-- Project Description Section -->
+     <section class="project-description">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>
+             As part of the Human-Centered Design module in first year, I co-developed Swipe, a self-cleaning kitchen countertop designed for shared student kitchens. The project followed a human-centered design approach, combining field research, rapid prototyping, and iterative user validation.
+            </p>
+            <p>
+                Faced with the widespread issue of poor hygiene in communal kitchens — identified by over 75% of students surveyed — we created a tangible solution to promote healthier cleaning habits. Swipe is a rotating, self-cleaning countertop module that reduces the effort needed to maintain cleanliness while encouraging a sense of shared responsibility. The result: cleaner kitchens, less social friction, and more students feeling confident to cook.
+            </p>
+            <p>
+                Our process included in-depth user research, interviews with hall staff, lo-fi and hi-fi prototyping, electronics testing, and real-world user trials. This journey led us to design a desirable product that addresses an overlooked but pressing issue in student life.
+            </p>
+            <p> 
+                Swipe is more than a cleaning tool — it represents a vision of design as a driver of everyday change, tackling micro-conflicts in shared living environments. This project reinforced my commitment to practical, empathetic, and impact-oriented design.
+            </p>
+        </div>
+    </section>
+    
+
+     <!--- Video Section --->
+     <section id="video-section">
+        <video controls id="fullscreen-video">
+            <source src="images/work-4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!---You May Also Like section-->
+    <div class="container">
+        <h1 class="sub-title">You May Also Like</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Kewbot</h3>
+                    <p>Rethinking ageing in the cities of tomorrow</p>
+                    <a href="work-1.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Physical Computing</h3>
+                    <p>The talking graduation cap - a guessing game like no other</p>
+                    <a href="work-2.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-7.png">
+                <div class="layer">
+                    <h3>Car Race</h3>
+                    <p>Bluetooth-controlled car with ESP32 and MicroPython</p>
+                    <a href="work-7.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="projects.html" class="btn">See All Projects</a> <!-- Button to go back -->
+    </div>
+
+</html>

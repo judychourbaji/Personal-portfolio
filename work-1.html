@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the same CSS file -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- FontAwesome for icons -->
+</head>
+<body class="work-1-page"> <!-- Added class for dynamic background -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>KewBot</p>
+                <h1>Rethinking Ageing in the <br> <span> Cities of Tomorrow </span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Description Section -->
+    <section class="project-description">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>
+                During summer 2024, I had the honour of representing Imperial College London at the first International Design Education Laboratory (EduLab), hosted by Tsinghua University in Qingdao, China. The five-week programme brought together students from eight leading universities to collaboratively imagine solutions for future scenarios in 2050.
+            </p>
+            <p>
+                Our team was assigned the “positive future” scenario, where responsible consumption and human-focused design prevail. In response, we developed KewBot — a smart gardening companion designed to enhance the physical and mental health of elderly users living in high-rise urban environments.
+            </p>
+            <p>
+                KewBot is more than just a tool. It assists with gardening tasks while encouraging physical movement, reducing stress, and promoting community interaction through shared gardening spaces. By integrating adaptive technology and vertical gardening into a daily health routine, KewBot supports active ageing and social connection in future cities.
+            </p>
+            <p> 
+                This experience gave me the opportunity to co-create in an intercultural setting, present to industry and government representatives, and contribute to a vision of design as a force for sustainable, human-centred futures.
+            </p>
+        </div>
+    </section>
+
+    <!--- Video Section --->
+    <section id="video-section">
+        <video controls id="fullscreen-video">
+            <source src="images/work-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!--- You May Also Like Section --->
+    <div class="container">
+        <h1 class="sub-title">You May Also Like</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Physical Computing</h3>
+                    <p>The talking graduation cap - a guessing game like no other</p>
+                    <a href="work-2.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-4.png">
+                <div class="layer">
+                    <h3>Human Centered Design</h3>
+                    <p>Rethinking cleanliness in shared kitchen</p>
+                    <a href="work-4.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Sustainable Aircraft Seats</h3>
+                    <p>Designing for circularity in the skies</p>
+                    <a href="work-3.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="projects.html" class="btn">See All Projects</a> <!-- Button to go back -->
+    </div>
+</body>
+</html>

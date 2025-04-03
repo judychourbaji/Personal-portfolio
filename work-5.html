@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the same CSS file -->
+</head>
+<body class="work-5-page"> <!-- Added class for dynamic background -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Thermofluids</p>
+                <h1>Vehicle Aerodynamics </br> & Thermal Design</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Description Section -->
+    <section class="project-description">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>
+                As part of the Thermofluids module in second year, I undertook a two-part design challenge combining aerodynamic design, fluid dynamics, and thermal engineering. The task: to conceptualize a modern vehicle archetype and develop a liquid-cooled thermal management system for its battery — all grounded in real-world simulations and experimental validation.
+            </p>
+            <p>
+                In the first phase, I redesigned the iconic Mercedes-Benz 300 SL with a focus on aerodynamic efficiency. Using iterative 3D CAD modeling and CFD analysis in Ansys, I identified and corrected key inefficiencies in the original shape — from flow separation and lift-inducing rooflines to drag-heavy wheel arches. My final design incorporated modern aerodynamic features like diffusers, side skirts, and an S-duct.
+            </p>
+            <p>
+                In the second phase, we 3D printed a scale model of the redesigned car for wind tunnel testing. I validated my CFD predictions through physical trials, using flow visualization and force measurements to compare drag and lift coefficients. This comparison highlighted the importance of scaling laws, Reynolds number effects, and the physical nuances missed by idealized simulations.
+            </p>
+            <p> 
+                Parallel to this, I designed a battery cooling system using copper pipelines and a high-conductivity cooling plate. I ran hand calculations and CFD simulations to optimize flow velocity, pressure drop, and thermal performance. The final system reduced hotspot risks and achieved uniform heat distribution, with design decisions backed by thermodynamic theory and real-world constraints.
+            </p>
+            <p>
+                This project sharpened my skills in fluid mechanics, simulation, physical testing, and design iteration — but more importantly, it taught me how to integrate digital and physical methods to engineer for performance, efficiency, and reliability.
+            </p>
+        </div>
+    </section>
+
+    <div class="gallery">
+        <img src="images/5.1.png" alt="Report Page 1">
+        <img src="images/5.2.png" alt="Report Page 2">
+        <img src="images/5.3.png" alt="Report Page 3">
+        <img src="images/5.4.png" alt="Report Page 4">
+        <img src="images/5.5.png" alt="Report Page 5">
+        <img src="images/5.6.png" alt="Report Page 6">
+        <img src="images/5.7.png" alt="Report Page 7">
+        <img src="images/5.8.png" alt="Report Page 8">
+        <img src="images/5.9.png" alt="Report Page 9">
+        <img src="images/5.10.png" alt="Report Page 10">
+    </div>
+    
+    <!--- You May Also Like Section --->
+    <div class="container">
+        <h1 class="sub-title">You May Also Like</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-8.png">
+                <div class="layer">
+                    <h3>Water Tower Challenge</h3>
+                    <p>Optimizing a biodegradable water tower with FEA </p>
+                    <a href="work-8.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-7.png">
+                <div class="layer">
+                    <h3>Car Race</h3>
+                    <p>Bluetooth-controlled car with ESP32 and MicroPython</p>
+                    <a href="work-7.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Sustainable Aircraft Seats</h3>
+                    <p>Designing for circularity in the skies</p>
+                    <a href="work-3.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="portfolio.html" class="btn">See All Projects</a> <!-- Button to go back -->
+    </div>
+</body>
+</html>

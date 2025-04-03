@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the same CSS file -->
+</head>
+<body class="work-6-page"> <!-- Added class for dynamic background -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Sustainability Engineering Hackathon</p>
+                <h1>From the sun to <br>the circuit – a new <br> take on <span> clean energy</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Description Section -->
+    <section class="project-description">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <p>
+                I had the opportunity to participate in the Sustainable Engineering Hackathon, where my team and I tackled 
+                the challenge of developing innovative solutions for renewable energy applications. This competition brought
+                together multidisciplinary teams to design and prototype technologies that promote sustainability and energy 
+                efficiency.
+            </p>
+            <p>
+                In response to the challenge, we developed a solar-powered smart device integrating Arduino, 
+                designed to optimize energy consumption and enhance accessibility to renewable energy sources. 
+                By leveraging embedded systems and IoT technologies, our project aimed to demonstrate how intelligent 
+                automation can support a more sustainable future.
+            </p>
+            <p>
+                Beyond its technical features, our device encouraged user engagement in energy-saving practices and showcased
+                the potential of decentralized renewable energy solutions. Its adaptive design allowed for seamless integration 
+                into urban and rural environments, contributing to a vision of accessible and sustainable energy.
+            </p>
+            <p> 
+                This experience enabled me to apply my engineering and problem-solving skills in a high-pressure, collaborative 
+                environment. Our project was awarded 2nd place, recognizing our innovation in sustainable energy solutions.
+            </p>
+        </div>
+    </section>
+
+    <!--- You May Also Like Section --->
+    <div class="container">
+        <h1 class="sub-title">You May Also Like</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Sustainable Aircraft Seats</h3>
+                    <p>Designing for circularity in the skies</p>
+                    <a href="work-3.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Kewbot</h3>
+                    <p>Rethinking ageing in the cities of tomorrow</p>
+                    <a href="work-1.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Physical Computing</h3>
+                    <p>The talking graduation cap - a guessing game like no other</p>
+                    <a href="work-2.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="projects.html" class="btn">See All Projects</a> <!-- Button to go back -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body class="index-page"></body>
+<div id="header">
+    <div class="container">
+        <div class="top-bar"></div>
+        
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        
+        <div class="header-text">
+            <p>Imperial College Student</p>
+            <h1>Hi, I'm <span>Judy</span> Chourbaji<br> Design Engineer</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about"> 
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Undergraduate Student in Design Engineering (Meng) at Imperial College London. Interested in exploring how engineering combined to design can help reshape and contribute to a better world. Enthusiastic about leveraging my education and skills to contribute to innovative solutions and drive positive change.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Technical skills')">Technical skills</p>
+                    <p class="tab-links" onclick="opentab('Soft skills')">Soft skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <!-- Technical Skills Section -->
+                <div class="tab-contents active-tab" id="Technical skills">
+                    <ul>
+                        <li><span>Design Engineering</span><br> Product design, CAD modeling (Fusion 360, Blender, Keyshot), FEA analysis (ANSYS) </li>
+                        <li><span>Computer languages</span><br>Python, C++, MATLAB, HTML, Figma, MicroPython</li>
+                        <li><span>Embedded Systems</span><br>Arduino, Bela, ESP32, PyBench</li>
+                    </ul>
+                </div> <!-- Close the Technical skills div properly -->
+
+                <!-- Soft Skills Section -->
+                <div class="tab-contents" id="Soft skills">
+                    <ul>
+                        <li><span>Problem Solving</span><br> Analytical thinking, creativity, attention to detail </li>
+                        <li><span>Communication & Collaborations</span><br>Teamwork, clear communication, confidence</li>
+                        <li><span>Organization & Leadership</span><br>Project & time management, initiative, independence</li>
+                        <li><span>Adaptability & Resilience</span><br>Flexibility, handling challenges, growth mindset</li>
+                    </ul>
+                </div>
+
+                <!-- Education Section -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024-present</span><br>Design Engineering at Imperial College London</li>
+                        <li><span>2020-2023</span><br>French Baccalaureat with highest honours at Lycee Janson De Sailly</li>
+                    </ul>
+                </div>
+
+            </div> <!-- Close about-col-2 -->
+        </div> <!-- Close row -->
+    </div> <!-- Close container -->
+</div> <!-- Close about -->
+
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3><b>KewBot</b></h3>
+                    <p>Rethinking ageing in the cities of tomorrow</p>
+                    <a href="work-1.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3><b>Physical Computing</b></h3>
+                    <p>The talking graduation cap - a guessing game like no other</p>
+                    <a href="work-2.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3><b>Sustainable aircraft seats</b></h3>
+                    <p>Designing for circularity in the skies</p>
+                    <a href="work-3.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="projects.html" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> judy.chourbaji23@imperial.ac.uk</p>
+                <p><i class="fas fa-phone-square-alt"></i> +44 7495 838645</p>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Judy Chourbaji Porfolio</a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
