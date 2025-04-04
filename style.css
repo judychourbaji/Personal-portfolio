@@ -365,28 +365,74 @@ nav .fas{
 
 
 @media only screen and (max-width: 600px) {
-    #header {
-        background-size: contain;
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        height: auto;
-        aspect-ratio: 16 / 9; /* préserve un format paysage */
-        padding-top: 60px; /* espace au-dessus du contenu */
-        padding-bottom: 40px; /* espace en dessous si besoin */
+
+    /* ------ HEADER IMAGE SPECIFIQUE MOBILE POUR CHAQUE PAGE ------ */
+    .index-page #header {
+        background-image: url('images/index-bg-mobile.png');
     }
 
+    .projects-page #header {
+        background-image: url('images/index-bg-mobile.png');
+    }
+
+    .work-1-page #header {
+        background-image: url('images/work-1-bg-mobile.png');
+    }
+
+    .work-2-page #header {
+        background-image: url('images/work-2-bg-mobile.png');
+    }
+
+    .work-3-page #header {
+        background-image: url('images/work-3-bg-mobile.png');
+    }
+
+    .work-4-page #header {
+        background-image: url('images/work-4-bg-mobile.png');
+    }
+
+    .work-5-page #header {
+        background-image: url('images/work-5-bg-mobile.png');
+    }
+
+    .work-6-page #header {
+        background-image: url('images/work-6-bg-mobile.png');
+    }
+
+    .work-7-page #header {
+        background-image: url('images/work-7-bg-mobile.png');
+    }
+
+    .work-8-page #header {
+        background-image: url('images/work-8-bg-mobile.png');
+    }
+
+    .work-9-page #header {
+        background-image: url('images/work-9-bg-mobile.png');
+    }
+
+    /* ------ HEADER GENERAL MOBILE ------ */
+    #header {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll; /* fixe = bug sur mobile */
+    }
+
+    /* ------ HEADER TEXT ------ */
     .header-text {
-        margin-top: 40px;
+        margin-top: 100%;
         font-size: 16px;
         padding: 0 5%;
         text-align: center;
     }
 
     .header-text h1 {
-        font-size: 28px;
+        font-size: 30px;
     }
 
+    /* ------ NAVIGATION ------ */
     nav .fas {
         display: block;
         font-size: 25px;
@@ -419,11 +465,13 @@ nav .fas{
         cursor: pointer;
     }
 
+    /* ------ CONTENU ------ */
     .sub-title {
         font-size: 40px;
     }
 
-    .about-col-1, .about-col-2 {
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 100%;
     }
 
@@ -440,7 +488,8 @@ nav .fas{
         margin-right: 20px;
     }
 
-    .contact-left, .contact-right {
+    .contact-left,
+    .contact-right {
         flex-basis: 100%;
     }
 
@@ -448,6 +497,7 @@ nav .fas{
         font-size: 14px;
     }
 }
+
 
 
 #msg{
