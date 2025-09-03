@@ -3,112 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the same CSS file -->
+    <title>My Projects - Judy Chourbaji</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
+<body class="projects-page">
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <div class="top-bar"></div>
+            
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="Judy Chourbaji Logo">
+                </a>
 
-<body class="projects-page"></body>
-<div id="header">
-    <div class="container">
-        <div class="top-bar"></div>
-        
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
+                <!-- Menu Hamburger -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
-        
-        <div class="header-text">
-            <h1> <span>Welcome</span> to my world <br> of Engineering, Design <br> and Innovation! </h1>
+                <!-- Menu Navigation -->
+                <ul id="sidemenu">
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="header-text">
+                <h1><span>Welcome</span> to my world<br>of Engineering, Design<br>and Innovation!</h1>
+            </div>
         </div>
     </div>
-</div>
         
+    <!-- Projects Section -->
     <div class="container">
         <h1 class="sub-title">My Projects</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/work-1.png">
+                <img src="images/work-1.png" alt="KewBot Project">
                 <div class="layer">
                     <h3><b>Kewbot</b></h3>
-                    <p> Rethinking ageing in the cities of tomorrow</p>
-                    <a href="work-1.html"><i class="fas fa-external-link-alt"></i></a>
+                    <p>Rethinking ageing in the cities of tomorrow</p>
+                    <a href="Kewbot.html" aria-label="View KewBot project">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
             </div>
+
             <div class="work">
-                <img src="images/work-2.png">
+                <img src="images/work-101.png" alt="Industrial Design Engineering">
+                <div class="layer">
+                    <h3><b>Elvie Breathe</b></h3>
+                    <p>Empowering Expectant Mothers Through Guided Breathing</p>
+                    <a href="IDE.html" aria-label="View Industrial Design Engineering Project">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="work">
+                <img src="images/work-2.png" alt="Physical Computing Project">
                 <div class="layer">
                     <h3><b>Physical Computing</b></h3>
                     <p>The talking graduation cap - a guessing game like no other</p>
-                    <a href="work-2.html"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="gizmo.html" aria-label="View Physical Computing project">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
             </div>
+
             <div class="work">
-                <img src="images/work-3.png">
+                <img src="images/work-11.5.jpg" alt="FEA">
+                <div class="layer">
+                    <h3><b>Finite Element Analysis</b></h3>
+                    <p>Temporomandibular Joint Engineering</p>
+                    <a href="FEA.html" aria-label="View FEA Project">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="images/work-3.png" alt="Sustainable Aircraft Seats Project">
                 <div class="layer">
                     <h3><b>Sustainable Aircraft Seats</b></h3>
                     <p>Designing for circularity in the skies</p>
-                    <a href="work-3.html"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="SDE.html" aria-label="View Sustainable Aircraft Seats project">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
             </div>
+            
             <div class="work">
-                <img src="images/work-4.png">
+                <img src="images/work-4.png" alt="Human Centered Design Project">
                 <div class="layer">
                     <h3><b>Human Centered Design</b></h3>
                     <p>Rethinking cleanliness in shared kitchen</p>
-                    <a href="work-4.html"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="HCD.html" aria-label="View Human Centered Design project">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
             </div>
+            
             <div class="work">
-                <img src="images/work-5.png">
+                <img src="images/work-5.png" alt="Thermofluids Project">
                 <div class="layer">
                     <h3><b>Thermofluids</b></h3>
                     <p>Vehicle aerodynamics & thermal design</p>
-                    <a href="work-5.html"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="Thermofluids.html" aria-label="View Thermofluids project">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
             </div>
+
             <div class="work">
-                <img src="images/work-6.png">
+                <img src="images/work-9.png" alt="Electronics">
+                <div class="layer">
+                    <h3><b>Balancing Segway</b></h3>
+                    <p>text text</p>
+                    <a href="Segway.html" aria-label="View Balancing Segway project">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="images/work-6.png" alt="Sustainability Engineering Hackathon Project">
                 <div class="layer">
                     <h3><b>Sustainability Engineering Hackathon</b></h3>
                     <p>From the sun to the circuit – a new take on clean energy</p>
-                    <a href="work-6.html"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="SEH.html" aria-label="View Sustainability Engineering Hackathon project">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
             </div>
+            
             <div class="work">
-                <img src="images/work-7.png">
+                <img src="images/work-7.png" alt="Car Race Project">
                 <div class="layer">
                     <h3><b>Car race</b></h3>
                     <p>Bluetooth-controlled car with ESP32 and MicroPython</p>
-                    <a href="work-7.html"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="Car.html" aria-label="View Car Race project">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
             </div>
+            
             <div class="work">
-                <img src="images/work-8.png">
+                <img src="images/work-8.png" alt="Water Tower Challenge Project">
                 <div class="layer">
                     <h3><b>Water Tower Challenge</b></h3>
-                    <p>Optimizing a biodegradable water tower with FEA</p>
-                    <a href="work-8.html"><i class="fas fa-external-link-alt"></i></a>
+                    <p>Optimising a biodegradable water tower with FEA</p>
+                    <a href="Water.html" aria-label="View Water Tower Challenge project">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
             </div>
+            
             <div class="work">
-                <img src="images/work-9.png">
+                <img src="images/work-12.png" alt="More Projects Coming Soon">
                 <div class="layer">
-                    <h3>More is coming</h3>
-                    <p>I have a few more projects that I need to code in. The website is in continuous development. </p>
-                    <a href="work-9.html"><i class="fas fa-external-link-alt"></i></a>
+                    <h3><b>More is coming</b></h3>
+                    <p>I have a few more projects that I need to code in. The website is in continuous development.</p>
+                    <a href="work-12.html" aria-label="View upcoming projects">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
             </div>  
-            
         </div>
-        <a href="index.html" class="btn">Back to Home</a> <!-- Button to go back -->
+        <a href="index.html" class="btn">Back to Home</a>
     </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
 </body>
 </html>

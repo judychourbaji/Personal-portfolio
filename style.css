@@ -20,17 +20,17 @@ body{
 }
 .top-bar {
     width: 100%;
-    height: 60px;  /* Adjust thickness */
+    height: 60px;
     background-color: black;
-    position: absolute; /* Stay at the top but inside #header */
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: 1; /* Ensure it's behind the text and logo */
+    z-index: 1;
 }
 
 .header-text, nav {
-    position: relative; /* Makes sure they appear over the black line */
-    z-index: 2; /* Higher than the black line */
+    position: relative;
+    z-index: 2;
 }
 
 .index-page #header {
@@ -38,7 +38,7 @@ body{
 }
 
 .projects-page #header {
-    background-image: url('images/index-bg.png');
+    background-image: url('images/bg-3.jpg');
 }
 
 .work-1-page #header {
@@ -81,7 +81,6 @@ body{
     padding: 10px 10%;
 }
 
-
 nav{
     display: flex;
     align-items: center;
@@ -119,6 +118,39 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+
+/* Menu hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
 .header-text{
     margin-top: 20%;
     font-size: 30px;
@@ -130,6 +162,7 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #DA1A32;
 }
+
 /* -----------about--------------- */
 #about{
     padding: 80px 0;
@@ -199,27 +232,26 @@ nav ul li a:hover::after{
     display: block;
 }
 
-
 /* -------portfolio----------- */
 #portfolio{
     padding: 50px 0;
 }
 .work-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ensures 3 columns */
-    grid-gap: 40px; /* Space between projects */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
     margin-top: 50px;
 }
 
 @media (max-width: 900px) {
     .work-list {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
     .work-list {
-        grid-template-columns: repeat(1, 1fr); /* 1 column on mobile */
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -304,21 +336,84 @@ nav ul li a:hover::after{
     margin-right: 15px;
     font-size: 25px;
 }
-.social-icons{
+
+/* Icônes sociales améliorées */
+.social-icons {
     margin-top: 30px;
+    display: flex;
+    gap: 20px;
 }
-.social-icons a{
+
+.social-icons a {
     text-decoration: none;
     font-size: 30px;
-    margin-right: 15px;
     color: #ababab;
-    display: inline-block;
-    transition: transform 0.5s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
 }
-.social-icons a:hover{
-    color: #DA1A32;
+
+.social-icons a:hover {
     transform: translateY(-5px);
+    background: rgba(218, 26, 50, 0.1);
+    border-color: #DA1A32;
 }
+
+/* Effet de brillance au hover */
+.social-icons a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover::before {
+    opacity: 1;
+}
+
+/* Couleurs spécifiques pour chaque icône au hover */
+.social-icons a[href*="mailto"]:hover {
+    color: #EA4335;
+    border-color: #EA4335;
+    background: rgba(234, 67, 53, 0.1);
+}
+
+.social-icons a[href*="tel"]:hover {
+    color: #34A853;
+    border-color: #34A853;
+    background: rgba(52, 168, 83, 0.1);
+}
+
+.social-icons a[href*="linkedin"]:hover {
+    color: #0077B5;
+    border-color: #0077B5;
+    background: rgba(0, 119, 181, 0.1);
+}
+
+/* Animation de pulsation pour attirer l'attention */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.social-icons a:hover {
+    animation: pulse 0.6s ease-in-out;
+}
+
 .btn.btn2{
     display: inline-block;
     background: #DA1A32;
@@ -358,13 +453,158 @@ form .btn2{
     color: #DA1A32;
     text-decoration: none;
 }
+
 /* -----------------css for small screens--------- */
 nav .fas{
     display: none;
 }
 
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+
+#video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    background-color: black;
+}
+
+#fullscreen-video {
+    width: 90vw;
+    max-height: 90vh;
+    object-fit: cover;
+}
+
+.project-description {
+    padding: 80px 10%;
+    background-color: #080808;
+    color: #fff;
+    text-align: left;
+}
+
+.project-description p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.project-description .sub-title {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: none;
+}
+
+.layer a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    font-size: 0;
+    color: transparent;
+    border: none;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 600px) {
+    /* Afficher le menu hamburger */
+    .hamburger {
+        display: flex;
+        z-index: 1000;
+    }
+
+    /* SUPPRIMER TOUTES LES ANCIENNES ICONES */
+    nav .fas {
+        display: none !important;
+    }
+
+    /* Menu mobile */
+    nav ul {
+        background: rgba(218, 26, 50, 0.95);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        right: -320px;
+        width: 320px;
+        height: 100vh;
+        padding-top: 80px;
+        z-index: 999; /* Plus élevé que le header text */
+        transition: right 0.4s ease;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+    }
+
+    /* Menu ouvert */
+    nav ul.active {
+        right: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px 0;
+        text-align: center;
+        list-style: none;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background 0.3s;
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+
+    nav ul li a:hover {
+        background: rgba(255,255,255,0.1);
+    }
+
+    /* Empêcher le scroll du body quand le menu est ouvert */
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    /* Réduire le z-index du header text pour qu'il passe derrière */
+    .header-text {
+        margin-top: 100%;
+        font-size: 18px;
+        padding: 0 5%;
+        text-align: left;
+        z-index: 1; /* Plus bas que le menu */
+        position: relative;
+    }
+
+    .header-text h1 {
+        font-size: 36px;
+    }
 
     /* ------ HEADER IMAGE SPECIFIQUE MOBILE POUR CHAQUE PAGE ------ */
     .index-page #header {
@@ -411,61 +651,14 @@ nav .fas{
         background-image: url('images/work-9-bg-mobile.png');
     }
 
-    /* ------ HEADER GENERAL MOBILE ------ */
     #header {
         height: 100vh;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-attachment: scroll; /* fixe = bug sur mobile */
+        background-attachment: scroll;
     }
 
-    /* ------ HEADER TEXT ------ */
-    .header-text {
-        margin-top: 100%;
-        font-size: 16px;
-        padding: 0 5%;
-        text-align: center;
-    }
-
-    .header-text h1 {
-        font-size: 30px;
-    }
-
-    /* ------ NAVIGATION ------ */
-    nav .fas {
-        display: block;
-        font-size: 25px;
-        cursor: pointer;
-    }
-
-    nav ul {
-        background: #DA1A32;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-        flex-direction: column;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 25px;
-        text-align: center;
-    }
-
-    nav ul .fas {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-
-    /* ------ CONTENU ------ */
     .sub-title {
         font-size: 40px;
     }
@@ -480,7 +673,7 @@ nav .fas{
     }
 
     .about-col-2 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .tab-links {
@@ -496,78 +689,17 @@ nav .fas{
     .copyright {
         font-size: 14px;
     }
-}
 
+    /* Ajustements des icônes sociales sur mobile */
+    .social-icons {
+        justify-content: center;
+        gap: 15px;
+        margin-top: 25px;
+    }
 
-
-#msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
-}
-
-#video-section {
-    display: flex;
-    flex-direction: column; /* Stack title and video */
-    align-items: center; /* Center both title and video */
-    text-align: center;
-    width: 100vw; /* Make section full width */
-    height: 100vh; /* Make section full screen */
-    justify-content: center;
-    background-color: black; /* Optional, to match the background */
-}
-
-#fullscreen-video {
-    width: 90vw; /* Make video responsive, adjust as needed */
-    max-height: 90vh;
-    object-fit: cover; /* Ensures proper video scaling */
-}
-
-
-.project-description {
-    padding: 80px 10%;
-    background-color: #080808; /* même fond que le reste */
-    color: #fff;
-    text-align: left;
-}
-
-.project-description p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #ccc;
-}
-
-.project-description .sub-title {
-    font-size: 40px;
-    color: #fff;
-    margin-bottom: 30px;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
-    gap: 5px; /* Espacement minimal entre les images */
-    max-width: 900px; /* Largeur adaptée pour une page A4 */
-    margin: auto; /* Centre la galerie */
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-    object-fit: contain; /* Assure que les images gardent leur proportion */
-    border: none; /* Pas de bordure */
-}
-
-.layer a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: none;
-    font-size: 0;
-    color: transparent;
-    border: none;
-    cursor: pointer;
+    .social-icons a {
+        width: 45px;
+        height: 45px;
+        font-size: 24px;
+    }
 }
