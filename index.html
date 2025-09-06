@@ -123,39 +123,93 @@
         </div>
     </div>
 
-    <!-- ----------contact------------- -->
+
+
+<!-- ----------contact------------- -->
+
 <div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fas fa-paper-plane"></i> judy.chourbaji23@imperial.ac.uk</p>
-                <p><i class="fas fa-phone-square-alt"></i> +44 7495 838645</p>
                 
-                <!-- Icônes sociales -->
+                <!-- Informations de contact avec icônes visuelles -->
+                <div class="contact-info">
+                    <p class="contact-item">
+                        <span class="contact-icon email-icon">📧</span>
+                        judy.chourbaji23@imperial.ac.uk
+                    </p>
+                    <p class="contact-item">
+                        <span class="contact-icon phone-icon">📱</span>
+                        +44 7495 838645
+                    </p>
+                    <p class="contact-item">
+                        <span class="contact-icon location-icon">📍</span>
+                        London, United Kingdom
+                    </p>
+                </div>
+                
+                <!-- Icônes sociales avec dessins clairs -->
                 <div class="social-icons">
-                    <a href="mailto:judy.chourbaji23@imperial.ac.uk" title="Send Email">
-                        <i class="fas fa-envelope"></i>
+                    <a href="mailto:judy.chourbaji23@imperial.ac.uk" 
+                       class="social-icon email-social" 
+                       title="Envoyer un email">
+                        <span class="icon-visual">✉️</span>
                     </a>
-                    <a href="tel:+447495838645" title="Call">
-                        <i class="fas fa-phone"></i>
+                    
+                    <a href="tel:+447495838645" 
+                       class="social-icon phone-social" 
+                       title="Appeler">
+                        <span class="icon-visual">📞</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/judy-chourbaji-6a02ba2b1" target="_blank" title="LinkedIn Profile">
-                        <i class="fab fa-linkedin"></i>
+                    
+                    <a href="https://www.linkedin.com/in/judy-chourbaji-6a02ba2b1" 
+                       class="social-icon linkedin-social" 
+                       target="_blank" 
+                       title="Profil LinkedIn">
+                        <span class="icon-visual">💼</span>
                     </a>
                 </div>
             </div>
+            
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+    <form action="https://formspree.io/f/mblaqljr" method="POST" id="contactForm">
+        <div class="form-group">
+            <input type="text" 
+                   name="name" 
+                   placeholder="Name *" 
+                   required
+                   class="form-input">
         </div>
+        
+        <div class="form-group">
+            <input type="email" 
+                   name="email" 
+                   placeholder="Email (optional)"
+                   class="form-input">
+        </div>
+
+
+        <div class="form-group">
+            <textarea name="message" 
+                      rows="6" 
+                      placeholder="Your Message *" 
+                      required
+                      class="form-input"></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn2">
+            <span class="btn-icon"></span>
+            Send Message
+        </button>
+    </form>
+    
+    <!-- Message de confirmation après envoi -->
+    <div id="msg" class="form-message" style="display: none;">
+        <p>Message sent successfully! I'll get back to you soon.</p>
     </div>
+</div>
+    
     <div class="copyright">
         <p>Judy Chourbaji Portfolio</p>
     </div>
